@@ -1,0 +1,22 @@
+<section style="padding:10% 0">
+  <div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+  <tr>
+<th>name</th>
+<th>job</th>
+<th>hobby</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let arrob of display">
+  <td>{{arrob.name}}</td>
+  <td>{{arrob.job}}</td>
+  <td>{{arrob.hobby}}</td>
+</tr>
+</tbody>
+</table>
+
+<button class="btn btn-info" (click)="addRow()">Add row</button>
+</div>
+</section>

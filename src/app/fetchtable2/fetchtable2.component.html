@@ -1,0 +1,30 @@
+<section style="padding:10% 0">
+    <div class="container">
+      <table class="table">
+          <thead class="thead-dark">
+    <tr>
+  <th>name</th>
+  <th>job</th>
+  <th>hobby</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let arrob of display">
+    <td>{{arrob.name}}</td>
+    <td>{{arrob.job}}</td>
+    <td>{{arrob.hobby}}</td>
+  </tr>
+  </tbody>
+  </table>
+  <table class="table">
+    <tr>
+      <td><input type="text" placeholder="Name" class="form-control"  [(ngModel)]="myName"></td>
+      <td><input type="text" placeholder="Job" class="form-control" [(ngModel)]="myJob"></td>
+      <td><input type="text" placeholder="Hobby" class="form-control" [(ngModel)]="myHobby"></td>
+    </tr>
+  </table>
+  
+  <button class="btn btn-info" (click)="addValue()">Add row</button>
+  <button class="btn btn-success" routerLink="/localstorage">Storage</button>
+  </div>
+  </section>
